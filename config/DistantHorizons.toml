@@ -1,0 +1,7 @@
+_version = 3
+
+[common.worldGenerator]
+	# Off so the server never actively runs chunk generation just to build LODs beyond
+	# what's already generated (that's the "force render the world" behavior) -- it
+	# still serves LOD data for any chunk that gets generated normally (players exploring).
+	enableDistantGeneration = false
